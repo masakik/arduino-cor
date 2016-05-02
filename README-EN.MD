@@ -27,7 +27,7 @@ http://www.arduinoecia.com.br/2014/02/sensor-de-reconhecimento-de-cor-tcs230.htm
 
 ## License
 
- Copyright (c) <year> <copyright holders>
+ Copyright (c) 2016 - Masaki Kawabata Neto e outros
 
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
