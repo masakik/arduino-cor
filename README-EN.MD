@@ -5,7 +5,7 @@ and convert them into HSL (http://en.wikipedia.org/wiki/HSL_color_space).
 In this format it can detect the colors trying to maintain independence brightness level
 environment. I have used Arduino pro mini but works on any model.
 
-The progrma uses a push button to carry out the white calibration.
+The program uses a push button to carry out the white calibration.
 The calibration is used to adjust the gain of each color of the sensor. The color calibration
 is saved in the internal memory of the arduino so do not lose on the power cycle.
 The white calibration is required because changing the ambient light changes
