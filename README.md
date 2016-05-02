@@ -1,14 +1,14 @@
 # Arduino Cor
 
 Este programa utiliza o sensor de cor TCS230 ligado a um arduino para ler as informações RGB de cor apresentadas ao sensor 
-as transforma em HSL (http://en.wikipedia.org/wiki/HSL_color_space).
+e as transforma em HSL (http://en.wikipedia.org/wiki/HSL_color_space).
 Nesse formato é possível detectar as cores procurando manter independência do nível de luminosidade
 do ambiente. Foi utilizado um arduino pro mini mas funciona em qualquer modelo.
 
 O programa utiliza um botão para realizar a calibração do branco.
-A calibração serve para ajustar o ganho de cada cor do sendor. A calibração de cor
+A calibração serve para ajustar o ganho de cada cor do sensor. A calibração de cor
 é guardada na memória interna do arduino então não se perde ao desligar e ligar.
-A calibração de branco é necessário pois ao mudar a luminosidade ambiente muda-se 
+A calibração de branco é necessária pois ao mudar a luminosidade do ambiente muda-se 
 a quantidade de luz que chega ao sensor.
 
 O programa permite a ligação de um led RGB que reproduz até
@@ -19,6 +19,17 @@ permitindo que ele funcione como o sensor de cor fabricado por eles.
 
 O programa mostra todas as informações no console serial. Para acomodar bem a saída de dados a velocidade foi ajustada
 para 57600 bps.
+
+## Utilização
+
+O teste típico de utilização consiste em calibrar o sensor numa superfície branca
+e depois passar o sensor sobre um disco HSL impresso.
+Dessa forma vai aparecendo na serial e no led rgb as cores detectadas.
+O papel da calibração deve ser do mesmo tipo do disco HSL. Por exemplo, se a calibração for feito num papel brilhante
+e a leitura num papel fosco a leitura fica incorreta.
+Pode-se calibrar quantas vezes for necessária.
+Deve-se manter também a distância do sensor ao disco constante. Pode ser por meio de um suporte mecânico 
+pois a distância faz com que haja variação na leitura.
 
 ## Creditos
 
