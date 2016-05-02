@@ -2,47 +2,11 @@
 
 // Programa : Detector de cores usando modulo TCS230
 //
-// Baseado no programa original de Martin Mason
+// Baseado no programa original de Martin Mason, obtido de 
 // http://www.arduinoecia.com.br/2014/02/sensor-de-reconhecimento-de-cor-tcs230.html
 
 // Elaborado por Masaki Kawabata Neto
-
-/* README.MD
- * Este programa utiliza o sensor de cor TCS230 para ler as informações RGB de cor apresentadas ao sensor 
- * e as transforma em HSL (http://en.wikipedia.org/wiki/HSL_color_space).
- * Nesse formato é possível detectar as cores procurando manter independência do nível de luminosidade
- * do ambiente.
- * 
- * O progrma utiliza um botão para realizar a calibração do branco.
- * A calibração serve para ajustar o ganho de cada cor do sendor.
- * 
- * O programa permite a ligação de um led RGB que permite reproduzir até
- * 6 cores que são; vermelho, verde, azul, ciano, magenta e amarelo, além do branco.
- * 
- * 
- * 
- * 
- * */
- 
-
-
-//
-// 21/7/2015
-// incluido led rgb para mostrar a cor
-
-// 22/07/2015, rev2
-// clenaup do codigo
-//
-// 23/07/2015, rev3
-// trocado int por byte nos pinos
-// colocado id de cor e saida analogica
-
-// 24/07/2015
-// incluido data para exportar pro robo
-
-// data
-// cores intermediarias mescladas
-//
+// https://github.com/masakik/arduino-cor
 
 // Pinos de conexao do modulo TCS230
 // OE do sensor deve ser connectado no terra
